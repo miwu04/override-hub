@@ -303,7 +303,7 @@ proxy-groups:
   - name: Emby节点
     icon: https://fastly.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Emby.png
     include-all: true
-    filter: (?i)Emby|
+    filter: (?i)Emby
   - name: GLOBAL
     icon: https://fastly.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Global.png
     include-all: true
