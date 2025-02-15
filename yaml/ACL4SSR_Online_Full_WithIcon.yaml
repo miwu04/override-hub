@@ -569,14 +569,14 @@ rule-providers:
     format: text
     type: http
   Emby:
-    url: https://testingcf.jsdelivr.net/gh/miwu04/Emby_rule/refs/heads/main/Emby.list
+    url: https://fastly.jsdelivr.net/gh/miwu04/Emby_rule@main/Emby.list
     path: ./ruleset/Emby.list
     behavior: classical
     interval: 86400
     format: text
     type: http
   GitHub:
-    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR/refs/heads/master/Clash/Ruleset/Github.list
+    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/Github.list
     path: ./ruleset/GitHub.list
     behavior: classical
     interval: 86400
