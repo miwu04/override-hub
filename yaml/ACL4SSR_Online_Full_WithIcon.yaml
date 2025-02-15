@@ -14,7 +14,7 @@ proxy-groups:
       - DIRECT
   - name: 手动切换
     icon: https://testingcf.jsdelivr.net/gh/shindgewongxj/WHATSINStash@master/icon/select.png
-    include-all: true
+    include-all: truef
     type: select
   - name: 自动选择
     icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Auto.png
@@ -80,7 +80,7 @@ proxy-groups:
       - 手动切换
       - DIRECT
   - name: Emby视频
-    icon: https://fastly.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Emby.png
+    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Emby.png
     type: select
     proxies:
       - 节点选择
@@ -199,7 +199,7 @@ proxy-groups:
       - 韩国节点
       - 手动切换
   - name: GitHub
-    icon: https://fastly.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/GitHub.png
+    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/GitHub.png
     type: select
     proxies:
       - 节点选择
@@ -315,7 +315,7 @@ proxy-groups:
     filter: (?i)NF|奈飞|解锁|Netflix|NETFLIX|Media
     type: select
   - name: Emby节点
-    icon: https://fastly.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Emby.png
+    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Emby.png
     include-all: true
     filter: (?i)Emby
     type: select
@@ -569,14 +569,14 @@ rule-providers:
     format: text
     type: http
   Emby:
-    url: https://ghp.ci/https://raw.githubusercontent.com/miwu04/Emby_rule/refs/heads/main/Emby.list
+    url: https://testingcf.jsdelivr.net/gh/miwu04/Emby_rule/refs/heads/main/Emby.list
     path: ./ruleset/Emby.list
     behavior: classical
     interval: 86400
     format: text
     type: http
   GitHub:
-    url: https://ghp.ci/https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/Ruleset/Github.list
+    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR/refs/heads/master/Clash/Ruleset/Github.list
     path: ./ruleset/GitHub.list
     behavior: classical
     interval: 86400
