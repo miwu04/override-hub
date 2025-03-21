@@ -552,9 +552,9 @@ rule-providers:
     interval: 86400
     format: text
     type: http
-  ChinaDomain:
-    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/ChinaDomain.list
-    path: ./ruleset/ChinaDomain.list
+  ChinaIp:
+    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/ChinaIp.list
+    path: ./ruleset/ChinaIp.list
     behavior: domain
     interval: 86400
     format: text
@@ -619,8 +619,9 @@ rules:
   - "RULE-SET,ChinaMedia,国内媒体"
   - "RULE-SET,ProxyMedia,国外媒体"
   - "RULE-SET,ProxyGFWlist,节点选择"
-  - "RULE-SET,ChinaDomain,全球直连"
+  - "RULE-SET,ChinaIp,全球直连"
   - "RULE-SET,ChinaCompanyIp,全球直连"
   - "RULE-SET,Download,全球直连"
   - "GEOIP,CN,全球直连"
+  - "GEOSITE,cn,全球直连"
   - "MATCH,漏网之鱼"
