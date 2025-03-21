@@ -211,6 +211,7 @@ proxy-groups:
       - 美国节点
       - 韩国节点
       - 手动切换
+      - GitHub节点
       - DIRECT        
   - name: 游戏平台
     icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Game.png
@@ -318,6 +319,10 @@ proxy-groups:
     icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Emby.png
     include-all: true
     filter: (?i)Emby
+    type: select
+  - name: GitHub节点
+    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/GitHub.png
+    include-all: true
     type: select
   - name: GLOBAL
     icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Global.png
