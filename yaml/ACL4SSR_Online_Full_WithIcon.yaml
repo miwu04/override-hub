@@ -318,7 +318,6 @@ proxy-groups:
   - name: Emby节点
     icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Emby.png
     include-all: true
-    filter: (?i)Emby
     type: select
   - name: GitHub节点
     icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/GitHub.png
