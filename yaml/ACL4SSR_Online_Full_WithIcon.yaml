@@ -573,7 +573,7 @@ rule-providers:
     format: text
     type: http
   Emby:
-    url: https://fastly.jsdelivr.net/gh/miwu04/Emby_rule@main/Emby.list
+    url: https://testingcf.jsdelivr.net/gh/miwu04/Emby_rule@main/Emby.list
     path: ./ruleset/Emby.list
     behavior: classical
     interval: 86400
