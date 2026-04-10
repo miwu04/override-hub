@@ -36,7 +36,7 @@ proxy-groups:
       - 韩国节点
       - 手动切换
       - DIRECT
-  - name: OpenAi
+  - name: AI
     icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Bot.png
     type: select
     proxies:
@@ -198,6 +198,19 @@ proxy-groups:
       - 日本节点
       - 韩国节点
       - 手动切换
+  - name: Google服务
+    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Google.png
+    type: select
+    proxies:
+      - 节点选择
+      - DIRECT
+      - 美国节点
+      - 香港节点
+      - 台湾节点
+      - 狮城节点
+      - 日本节点
+      - 韩国节点
+      - 手动切换    
   - name: GitHub
     icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/GitHub.png
     type: select
@@ -310,11 +323,6 @@ proxy-groups:
     type: select
     interval: 300
     tolerance: 50
-  - name: 奈飞节点
-    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Netflix.png
-    include-all: true
-    filter: (?i)NF|奈飞|解锁|Netflix|NETFLIX|Media
-    type: select
   - name: Emby节点
     icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Emby.png
     include-all: true
@@ -332,7 +340,7 @@ proxy-groups:
       - 手动切换
       - 自动选择
       - 电报消息
-      - OpenAi
+      - AI
       - 油管视频
       - 奈飞视频
       - Emby视频
@@ -345,6 +353,7 @@ proxy-groups:
       - 微软云盘
       - 微软服务
       - 苹果服务
+      - Google服务
       - 游戏平台
       - GitHub
       - 网易音乐
@@ -358,8 +367,8 @@ proxy-groups:
       - 台湾节点
       - 狮城节点
       - 韩国节点
-      - 奈飞节点
       - Emby节点
+      - GitHub节点
 
 rule-providers:
   LocalAreaNetwork:
@@ -432,6 +441,13 @@ rule-providers:
     interval: 86400
     format: text
     type: http
+  Google:
+    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Google.list
+    path: ./ruleset/Google.list
+    behavior: classical
+    interval: 86400
+    format: text
+    type: http  
   Apple:
     url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Apple.list
     path: ./ruleset/Apple.list
@@ -446,9 +462,9 @@ rule-providers:
     interval: 86400
     format: text
     type: http
-  OpenAi:
-    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/OpenAi.list
-    path: ./ruleset/OpenAi.list
+  AI:
+    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/AI.list
+    path: ./ruleset/AI.list
     behavior: classical
     interval: 86400
     format: text
@@ -596,12 +612,16 @@ rules:
   - "RULE-SET,GoogleFCM,谷歌FCM"
   - "RULE-SET,GoogleCN,全球直连"
   - "RULE-SET,SteamCN,全球直连"
+  - "RULE-SET,YouTube,油管视频"
+  - "RULE-SET,Netflix,奈飞视频"
+  - "RULE-SET,Emby,Emby视频"
   - "RULE-SET,Bing,微软Bing"
   - "RULE-SET,OneDrive,微软云盘"
   - "RULE-SET,Microsoft,微软服务"
+  - "RULE-SET,Google,Google服务"
   - "RULE-SET,Apple,苹果服务"
   - "RULE-SET,Telegram,电报消息"
-  - "RULE-SET,OpenAi,OpenAi"
+  - "RULE-SET,AI,AI"
   - "RULE-SET,NetEaseMusic,网易音乐"
   - "RULE-SET,Epic,游戏平台"
   - "RULE-SET,Origin,游戏平台"
@@ -609,9 +629,6 @@ rules:
   - "RULE-SET,Steam,游戏平台"
   - "RULE-SET,Nintendo,游戏平台"
   - "RULE-SET,GitHub,GitHub"
-  - "RULE-SET,YouTube,油管视频"
-  - "RULE-SET,Netflix,奈飞视频"
-  - "RULE-SET,Emby,Emby视频"
   - "RULE-SET,Bahamut,巴哈姆特"
   - "RULE-SET,BilibiliHMT,哔哩哔哩"
   - "RULE-SET,Bilibili,哔哩哔哩"
